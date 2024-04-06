@@ -1,11 +1,18 @@
+import ResultBlock from './components/ResultBlock';
+import Finish from './components/Finish';
 
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
 
-    </div>
+
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path={'/'} element={<ResultBlock />} />
+        <Route path={'/finish'} element={<Finish />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
