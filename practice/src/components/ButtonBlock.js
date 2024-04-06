@@ -1,10 +1,14 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { decrement, increment } from '../features/counter/counterSlice'
 
-const ButtonBlock = ({ increase, decrease }) => {
+
+const ButtonBlock = () => {
+  const dispatch = useDispatch()
   return (
     <div>
-      <button onClick={increase}>INC</button>
-      <button onClick={decrease}>DEC</button>
+      <button onClick={() => dispatch(increment())}>INC</button>
+      <button onClick={() => dispatch(decrement())}>DEC</button>
     </div>
   );
 };

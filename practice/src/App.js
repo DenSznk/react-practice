@@ -2,7 +2,7 @@ import ResultBlock from './components/ResultBlock';
 import Finish from './components/Finish';
 import './App.css';
 import { NavLink } from "react-router-dom";
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
