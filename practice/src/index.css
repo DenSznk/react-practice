@@ -12,9 +12,14 @@
       animation: App-logo-spin infinite 20s linear;
     }
   }
+  .active-link {
+    color: red; 
+    font-weight: bold;
+    font-size: 40px; 
+  }
   
   .App-header {
-    background-color: #282c34;
+    background-color: #fff;
     height: 200px;
     display: flex;
     flex-direction: column;
