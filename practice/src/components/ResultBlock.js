@@ -1,12 +1,16 @@
 import ButtonBlock from './ButtonBlock';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 const ResultBlock = () => {
   const [count, setCount] = useState(0);
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     if (count === 5) {
-      console.log('Count reached 5');
+      navigate("/finish");
     }
   }, [count]);
 
