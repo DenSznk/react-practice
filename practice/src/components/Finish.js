@@ -5,8 +5,12 @@ const Finish = () => {
 
   const count = useSelector((state) => state.counter.value)
 
+
   console.log("rrobfhnj");
   console.log(123);
+  console.log("from main");
+  console.log("rroooooorgfbfhnj");
+
 
 
     return (
