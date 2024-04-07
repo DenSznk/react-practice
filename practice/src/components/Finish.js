@@ -1,26 +1,31 @@
 import { useSelector} from 'react-redux'
-import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { resetcount } from '../features/counter/counterSlice'
+import { useNavigate } from "react-router-dom";
+
+
+
 
 const Finish = () => {
+  const navigate = useNavigate();
+
 
   const count = useSelector((state) => state.counter.value)
+  const dispatch = useDispatch()
 
-
-  console.log("rrobfhnj");
-  console.log(123);
-  console.log("from main");
-  console.log("rroooooorgfbfhnj");
-
-
+  const backHome = () => {
+    dispatch(resetcount())
+    return navigate("/");
+  }
 
     return (
       <div>
         <h1>Finish</h1>
 
         <div>The result is {count}</div>
-        {/* <Link to="/">
-          <button onClick={}>To Main</button>
-        </Link> */}
+        
+        <button onClick={backHome}>Start again</button>
+        
 
       </div>
     );
