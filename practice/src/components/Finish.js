@@ -5,7 +5,7 @@ const Finish = () => {
 
   const count = useSelector((state) => state.counter.value)
 
-
+  console.log("rroooooorgfbfhnj");
 
 
     return (
