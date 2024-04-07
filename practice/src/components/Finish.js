@@ -5,7 +5,8 @@ const Finish = () => {
 
   const count = useSelector((state) => state.counter.value)
 
-  console.log("rroooooorgfbfhnj");
+  console.log("rrobfhnj");
+
 
 
     return (
@@ -16,7 +17,7 @@ const Finish = () => {
         {/* <Link to="/">
           <button onClick={}>To Main</button>
         </Link> */}
-        
+
       </div>
     );
   };
