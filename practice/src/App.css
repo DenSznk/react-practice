@@ -15,9 +15,9 @@
 
 .App-header {
   background-color: #d5a0a0;
-  height: 200px;
+  height: 100px;
   display: flex;
-  flex-direction: column;
+  gap: 20px;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -44,7 +44,28 @@
 
 
 .active-link {
-  color: red; 
-  font-weight: bold;
-  font-size: 40px; 
+  color: red;
+}
+
+.button-block {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  border-radius: 5px;
+  border: 1px solid;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+  border-color: #d5a0a0;
+}
+
+.main-button {
+  width: 100px;
+  height: 30px;
+  font-size: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d5a0a0;
+  color: white;
 }

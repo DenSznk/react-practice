@@ -6,9 +6,9 @@ import { decrement, increment } from '../features/counter/counterSlice'
 const ButtonBlock = () => {
   const dispatch = useDispatch()
   return (
-    <div>
-      <button onClick={() => dispatch(increment())}>INC</button>
-      <button onClick={() => dispatch(decrement())}>DEC</button>
+    <div className='button-block'>
+      <button className='main-button' onClick={() => dispatch(increment())}>INC</button>
+      <button className='main-button' onClick={() => dispatch(decrement())}>DEC</button>
     </div>
   );
 };
