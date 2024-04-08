@@ -23,12 +23,14 @@ function App() {
         </NavLink>
       </header>
 
-      <div className="App-body">
-        <h1>Main part</h1>
+      <div className="content-block">
+      <div className="counter-body">
         <Routes>
           <Route path={"/"} element={<ResultBlock />} />
           <Route path={"/finish"} element={<Finish />} />
         </Routes>
+      </div>
+
       </div>
     </>
   );

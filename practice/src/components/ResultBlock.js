@@ -17,7 +17,7 @@ const ResultBlock = () => {
   useEffect(() => {
     if (count === 5) {
       navigate("/finish");
-            
+
     }
   }, [count]);
 
