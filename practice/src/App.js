@@ -3,7 +3,7 @@ import Finish from "./components/Finish";
 import "./App.css";
 import { NavLink } from "react-router-dom";
 
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -24,13 +24,12 @@ function App() {
       </header>
 
       <div className="content-block">
-      <div className="counter-body">
-        <Routes>
-          <Route path={"/"} element={<ResultBlock />} />
-          <Route path={"/finish"} element={<Finish />} />
-        </Routes>
-      </div>
-
+        <div className="counter-body">
+          <Routes>
+            <Route path={"/"} element={<ResultBlock />} />
+            <Route path={"/finish"} element={<Finish />} />
+          </Routes>
+        </div>
       </div>
     </>
   );
