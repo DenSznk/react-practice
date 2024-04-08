@@ -1,7 +1,15 @@
+import {useEffect} from 'react'
+import { useDispatch } from 'react-redux';
+import {fetchProducts} from "../features/products/productsSlice"
 
 function Products({ title, description, price, category, thumbnail }) {
 
     const imagePath = `/img/${thumbnail.split('/').pop()}`;
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+      console.log(dispatch(fetchProducts()))
+    }, [dispatch])
 
     return (
       <div className="product">
