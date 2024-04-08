@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { resetcount } from "../features/counter/counterSlice";
+import { resetCount } from "../features/counter/counterSlice";
 import { useNavigate } from "react-router-dom";
 
 const Finish = () => {
@@ -10,7 +10,7 @@ const Finish = () => {
   const dispatch = useDispatch();
 
   const backHome = () => {
-    dispatch(resetcount());
+    dispatch(resetCount());
     return navigate("/");
   };
 
